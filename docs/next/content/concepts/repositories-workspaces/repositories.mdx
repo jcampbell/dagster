@@ -26,8 +26,6 @@ as the Dagster CLI or Dagit, can target to load the definitions.
 | <PyObject object="PartitionSetDefinition" />                            | The class used to define a partition set. See [Partitions](/concepts/partitions-schedules/partitions) to learn more about ways to define partition sets.                                                                                                          |
 | <PyObject object="RepositoryDefinition" />                              | Base class for repositories. You almost never want to use initialize this class directly. Instead, you should use the <PyObject object="repository" decorator /> which returns a <PyObject object="RepositoryDefinition"  />                                      |
 
----
-
 ## Overview
 
 Repositories are convenient ways to organize your pipelines and other definitions. Each repository:
@@ -101,7 +99,7 @@ Now you can see all pipelines, schedules and sensors in this repository are on t
 <img src="/images/concepts/repo-dagit.png" />
 
 You can also use `-m` to specify module where the repository lives. See detailed references
-in [`dagit`](/\_apidocs/cli#dagit).
+in [`dagit`](/_apidocs/cli#dagit).
 
 Loading repositories via the `-f` or `-m` options is actually just a convenience function. The
 underlying abstraction is the Workspace, which determines all of the available repositories
