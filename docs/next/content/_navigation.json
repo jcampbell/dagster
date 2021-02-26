@@ -232,19 +232,23 @@
         ]
       },
       {
-        "title": "Partitions & Schedules",
+        "title": "Partitions, Schedules, & Sensors",
         "children": [
           {
             "title": "Partitions",
-            "path": "/concepts/partitions-schedules/partitions"
+            "path": "/concepts/partitions-schedules-sensors/partitions"
           },
           {
             "title": "Schedules",
-            "path": "/concepts/partitions-schedules/schedules"
+            "path": "/concepts/partitions-schedules-sensors/schedules"
           },
           {
-            "title": "Backfills",
-            "path": "/overview/scheduling-partitions/backfill"
+            "title": "Sensors",
+            "path": "/concepts/partitions-schedules-sensors/sensors"
+          },
+          {
+            "title": "Backfill",
+            "path": "/concepts/partitions-schedules-sensors/backfill"
           }
         ]
       },
@@ -307,6 +311,13 @@
     "title": "Guides",
     "icon": "Search",
     "path": "/guides",
+    "children": []
+  },
+
+  {
+    "title": "Deployment",
+    "icon": "Cloud",
+    "path": "/deployment",
     "children": [
       {
         "title": "Dagster Deployments",

@@ -1,0 +1,97 @@
+---
+title: Schedules | Dagster
+description: Sensors allow you to instigate runs when some external state changes.
+---
+
+# Sensors
+
+Sensors allow you to instigate runs when some external state changes.
+
+<img src="/images/schedules.png" />
+
+## Relevant APIs
+
+| Name                                    | Description                                                                                                                                                                                                     |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <PyObject object="sensor" decorator />  | The decorator used to define a sensor. The decorated function is called the `execution_fn`. The decorator returns a <PyObject object="SensorDefinition" />                                                      |
+| <PyObject object="SensorDefinition"  /> | Base class for sensors. You almost never want to use initialize this class directly. Instead, you should use the <PyObject object="sensor" decorator /> which returns a <PyObject object="SensorDefinition"  /> |
+
+## Overview
+
+Sensors are definitions in Dagster that allow you to automatically instigate runs based on some external state change. For example, you could:
+
+- Launch a run whenever a file file appears in an s3 bucket
+- Launch a run whenever a specific asset is materialized by another pipeline
+- Launch a run whenever an external system is down
+
+Sensors have several important properties:
+
+- Each sensor targets a specific pipeline
+- A sensors defines an evlauation function that returns either:
+  - One or more <PyObject object="RunRequest"/> objects. A run will be launched for each run request.
+  - An optional <PyObject object="SkipReason"/>, which specifies a message which describes why no runs were requested.
+- A sensor optionally defines tags, a mode, and a solid selection for the targeted pipeline.
+
+---
+
+## Defining a sensor
+
+To define a sensor, use the <PyObject object="sensor" decorator /> decorator. The decorated function is called the `execution_fn` and must have `context` as the first argument. The context is a <PyObject object="SensorExecutionContext" />
+
+Given the following pipeline that logs a filename that is specified in the configuration in the `process_file` solid:
+
+```python
+@solid(config_schema={"filename": str})
+def process_file(context):
+    filename = context.solid_config["filename"]
+    context.log.info(filename)
+
+
+@pipeline
+def log_file_pipeline():
+    process_file()
+```
+
+We can write a sensor that watches for new files in a directory and requests a run for each new file in the directory.
+
+```python
+@sensor(pipeline_name="log_file_pipeline")
+def my_directory_sensor(_context):
+    for filename in os.listdir(MY_DIRECTORY):
+        filepath = os.path.join(MY_DIRECTORY, filename)
+        if os.path.isfile(filepath):
+            yield RunRequest(
+                run_key=filename,
+                run_config={"solids": {"process_file": {"config": {"filename": filename}}}},
+            )
+```
+
+### Idempotence using run keys
+
+### Custom evaluation interval
+
+TODO
+
+## Testing sensors
+
+### Monitoring sensors in Dagit
+
+## Examples
+
+### Asset sensor
+
+TODO
+
+### S3 file sensor
+
+TODO
+
+### Pipeline run sensor
+
+TODO
+
+### Pipeline failure sensor
+
+TODO
+
+### Sensor with custom evaluation interval
