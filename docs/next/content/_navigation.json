@@ -1,0 +1,666 @@
+[
+  {
+    "title": "Getting Started",
+    "icon": "Sparkles",
+    "path": "/getting-started",
+    "children": [
+      {
+        "title": "Getting Started",
+        "children": [
+          {
+            "title": "Installation",
+            "path": "/getting-started/install"
+          },
+          {
+            "title": "\"Hello World\"",
+            "path": "/getting-started/hello-world"
+          },
+          {
+            "title": "Create a New Project",
+            "path": "/getting-started/init"
+          },
+          {
+            "title": "Telemetry",
+            "path": "/getting-started/telemetry"
+          },
+          {
+            "title": "Releases and Changes",
+            "path": "/getting-started/releases"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tutorial",
+    "icon": "AcademicCap",
+    "path": "/tutorial",
+    "children": [
+      {
+        "title": "Intro Tutorial",
+        "children": [
+          {
+            "title": "Setup for the Tutorial",
+            "path": "/tutorial/intro-tutorial/setup"
+          },
+          {
+            "title": "A Single-Solid Pipeline",
+            "path": "/tutorial/intro-tutorial/execute"
+          },
+          {
+            "title": "Connecting Solids in Pipelines",
+            "path": "/tutorial/intro-tutorial/basics-pipelines"
+          },
+          {
+            "title": "Configuring Solids",
+            "path": "/tutorial/intro-tutorial/basics-solids"
+          },
+          {
+            "title": "Testing Solids and Pipelines",
+            "path": "/tutorial/intro-tutorial/testable"
+          }
+        ]
+      },
+      {
+        "title": "Advanced Tutorials",
+        "children": [
+          {
+            "title": "Advanced: Dagster Types",
+            "path": "/tutorial/advanced-tutorial/types"
+          },
+          {
+            "title": "Advanced: Re-use and Composition",
+            "path": "/tutorial/advanced-tutorial/solids"
+          },
+          {
+            "title": "Advanced: Pipelines",
+            "path": "/tutorial/advanced-tutorial/pipelines"
+          },
+          {
+            "title": "Advanced: Materializations",
+            "path": "/tutorial/advanced-tutorial/materializations"
+          },
+          {
+            "title": "Advanced: Organizing Pipelines in Repositories & Workspaces",
+            "path": "/tutorial/advanced-tutorial/repositories"
+          },
+          {
+            "title": "Advanced: Scheduling Pipeline Runs",
+            "path": "/tutorial/advanced-tutorial/scheduling"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Main Concepts",
+    "icon": "Menu",
+    "path": "/concepts",
+    "children": [
+      {
+        "title": "Solids & Pipelines",
+        "children": [
+          {
+            "title": "Solids",
+            "path": "/concepts/solids-pipelines/solids"
+          },
+          {
+            "title": "Solid Events",
+            "path": "/concepts/solids-pipelines/solid-events"
+          },
+          {
+            "title": "Solid Hooks",
+            "path": "/concepts/solids-pipelines/solid-hooks"
+          },
+          {
+            "title": "Pipelines",
+            "path": "/concepts/solids-pipelines/pipelines"
+          },
+          {
+            "title": "Testing Solids and Pipelines",
+            "path": "/concepts/solids-pipelines/solid-factories"
+          }
+        ]
+      },
+      {
+        "title": "Pipeline Runs",
+        "children": [
+          {
+            "title": "Run Config",
+            "path": "/overview/solids-pipelines/solids"
+          },
+          {
+            "title": "Creating Pipeline Runs",
+            "path": "/overview/solids-pipelines/pipelines"
+          }
+        ]
+      },
+      {
+        "title": "Modes",
+        "children": [
+          {
+            "title": "Pipeline Modes",
+            "path": "/overview/solids-pipelines/solids"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "children": [
+          {
+            "title": "Resource Definitions",
+            "path": "/overview/resources/resource-definition"
+          },
+          {
+            "title": "Testing Resources",
+            "path": "/overview/reources/testing-resources"
+          }
+        ]
+      },
+      {
+        "title": "Configuration System",
+        "children": [
+          {
+            "title": "Config Types",
+            "path": "/overview/configuration/run-config"
+          },
+          {
+            "title": "Configured API",
+            "path": "/overview/configuration/configured"
+          },
+          {
+            "title": "Presets",
+            "path": "/overview/configuration/configured"
+          }
+        ]
+      },
+      {
+        "title": "IO Management",
+        "children": [
+          {
+            "title": "IO Managers",
+            "path": "/concepts/io-management/io-managers"
+          },
+          {
+            "title": "Custom IO Managers",
+            "path": "/concepts/io-management/custom-io-managers"
+          },
+          {
+            "title": "Dagster Type Loaders",
+            "path": "/concepts/io-management/dagster-type-loaders"
+          }
+        ]
+      },
+      {
+        "title": "Assets",
+        "children": [
+          {
+            "title": "Asset Materializations",
+            "path": "/overview/configuration/run-config"
+          },
+          {
+            "title": "Asset Catalog",
+            "path": "/overview/configuration/configured"
+          }
+        ]
+      },
+      {
+        "title": "Repositories & Workspaces",
+        "children": [
+          {
+            "title": "Overview",
+            "path": "/overview/repositories-workspaces/repositories"
+          },
+          {
+            "title": "Repositories",
+            "path": "/overview/repositories-workspaces/repositories"
+          },
+          {
+            "title": "Workspaces",
+            "path": "/overview/repositories-workspaces/workspaces"
+          }
+        ]
+      },
+      {
+        "title": "Logging",
+        "childPath": true,
+        "children": [
+          {
+            "title": "Loggers",
+            "path": "/overview/logging/logging"
+          },
+          {
+            "title": "Customize Logging",
+            "path": "/overview/logging/customize-logging"
+          }
+        ]
+      },
+      {
+        "title": "Partitions & Schedules",
+        "children": [
+          {
+            "title": "Partitions",
+            "path": "/concepts/partitions-schedules/partitions"
+          },
+          {
+            "title": "Schedules",
+            "path": "/concepts/partitions-schedules/schedules"
+          },
+          {
+            "title": "Backfills",
+            "path": "/overview/scheduling-partitions/backfill"
+          }
+        ]
+      },
+
+      {
+        "title": "Run Launchers & Executors",
+        "children": [
+          {
+            "title": "Run Launchers",
+            "path": "/overview/run-launchers-executors/run-launcher"
+          },
+          {
+            "title": "Executors",
+            "path": "/overview/run-launchers-executors/executor"
+          }
+        ]
+      },
+
+      {
+        "title": "Dagster Instance",
+        "children": [
+          {
+            "title": "Storages (Run/Event/Schedule)",
+            "path": "/overview/run-launchers-executors/run-launcher"
+          },
+
+          {
+            "title": "Dagster Daemon",
+            "path": "/overview/run-launchers-executors/run-launcher"
+          },
+
+          {
+            "title": "Scheduler",
+            "path": "/overview/run-launchers-executors/run-launcher"
+          },
+
+          {
+            "title": "Run Coordinator",
+            "path": "/overview/run-launchers-executors/run-launcher"
+          },
+          {
+            "title": "Run Launcher",
+            "path": "/overview/run-launchers-executors/run-launcher"
+          }
+        ]
+      },
+      {
+        "title": "Template",
+        "children": [
+          {
+            "title": "Concept Template",
+            "path": "/concepts/template/template"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "Guides",
+    "icon": "Search",
+    "path": "/guides",
+    "children": [
+      {
+        "title": "Dagster Deployments",
+        "children": [
+          {
+            "title": "Overview",
+            "path": "/deployment/overview"
+          },
+          {
+            "title": "Dagster Instance",
+            "path": "/deployment/dagster-instance"
+          },
+          {
+            "title": "User Code Isolation",
+            "path": "/deployment/user-code-isolation"
+          },
+          {
+            "title": "Building User Code Images",
+            "path": "/deployment/building-user-code-images"
+          },
+          {
+            "title": "Executors & Run Launchers",
+            "path": "/deployment/executors-run-launchers"
+          },
+          {
+            "title": "Dagster Daemon",
+            "path": "/deployment/dagster-daemon"
+          }
+        ]
+      },
+
+      {
+        "title": "Deploy on GCP",
+        "children": [
+          {
+            "title": "GCP Deployment Overview",
+            "path": "/deployment/gcp/overview"
+          }
+        ]
+      },
+      {
+        "title": "Deploy on AWS",
+        "children": [
+          {
+            "title": "AWS Deployment Overview",
+            "path": "/deployment/aws/overview"
+          },
+          {
+            "title": "EC2 Deployment Guide",
+            "path": "/deployment/guides/overview"
+          },
+          {
+            "title": "ECS Deployment Guide",
+            "path": "/deployment/guides/overview"
+          },
+          {
+            "title": "EKS Deployment Guide",
+            "path": "/deployment/guides/overview"
+          }
+        ]
+      },
+      {
+        "title": "Deploy on Kubernetes",
+        "children": [
+          {
+            "title": "Overview",
+            "path": "/deployment/kubernetes/overview"
+          },
+          {
+            "title": "K8s Executor & Launcher",
+            "path": "/deployment/guides/overview"
+          },
+          {
+            "title": "EKS Deployment Guide",
+            "path": "/deployment/guides/overview"
+          },
+          {
+            "title": "GKE Deployment Guide",
+            "path": "/deployment/guides/overview"
+          },
+          {
+            "title": "Other Cluster Deployment",
+            "path": "/deployment/guides/overview"
+          }
+        ]
+      },
+      {
+        "title": "Deploy on Docker",
+        "children": [
+          {
+            "title": "Overview",
+            "path": "/deployment/custom-infra/docker"
+          }
+        ]
+      },
+      {
+        "title": "Deploy on Custom Infra",
+        "children": [
+          {
+            "title": "Execute on Celery",
+            "path": "/deployment/custom-infra/celery"
+          },
+          {
+            "title": "Execute on Dask",
+            "path": "/deployment/custom-infra/dask"
+          },
+          {
+            "title": "Execute on Airflow",
+            "path": "/deployment/custom-infra/airflow"
+          },
+          {
+            "title": "Writing a Custom Run Launcher",
+            "path": "/deployment/custom-infra/custom-run-launcher"
+          },
+          {
+            "title": "Run Dagster Locally",
+            "path": "/deployment/custom-infra/local"
+          }
+        ]
+      },
+      {
+        "title": "Deploy on PAAS",
+        "children": [
+          {
+            "title": "Heroku Deployment Guide",
+            "path": "/deployment/guides/overview"
+          },
+          {
+            "title": "Render Deployment Guide",
+            "path": "/deployment/guides/overview"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "API Reference",
+    "icon": "BookOpen",
+    "path": "/_apidocs",
+    "children": [
+      {
+        "title": "Core",
+        "children": [
+          {
+            "title": "Solids",
+            "path": "/_apidocs/solids"
+          },
+          {
+            "title": "Pipelines",
+            "path": "/_apidocs/pipeline"
+          },
+          {
+            "title": "Modes & Resources",
+            "path": "/_apidocs/modes-resources"
+          },
+          {
+            "title": "Presets",
+            "path": "/_apidocs/presets"
+          },
+          {
+            "title": "Loggers",
+            "path": "/_apidocs/loggers"
+          },
+          {
+            "title": "Repositories",
+            "path": "/_apidocs/repositories"
+          },
+          {
+            "title": "Config",
+            "path": "/_apidocs/config"
+          },
+          {
+            "title": "Types",
+            "path": "/_apidocs/types"
+          },
+          {
+            "title": "Dagster CLI",
+            "path": "/_apidocs/cli"
+          },
+          {
+            "title": "Schedules and Sensors",
+            "path": "/_apidocs/schedules-sensors"
+          },
+          {
+            "title": "Partitions",
+            "path": "/_apidocs/partitions"
+          },
+          {
+            "title": "Errors",
+            "path": "/_apidocs/errors"
+          },
+          {
+            "title": "Execution",
+            "path": "/_apidocs/execution"
+          },
+          {
+            "title": "Hooks",
+            "path": "/_apidocs/hooks"
+          },
+          {
+            "title": "Utilities",
+            "path": "/_apidocs/utilities"
+          },
+          {
+            "title": "Internals",
+            "path": "/_apidocs/internals"
+          }
+        ]
+      },
+      {
+        "title": "Libraries",
+        "children": [
+          {
+            "title": "Dagstermill",
+            "path": "/_apidocs/libraries/dagstermill"
+          },
+          {
+            "title": "Airflow (dagster_airflow)",
+            "path": "/_apidocs/libraries/dagster_airflow"
+          },
+          {
+            "title": "AWS (dagster_aws)",
+            "path": "/_apidocs/libraries/dagster_aws"
+          },
+          {
+            "title": "Azure (dagster_azure)",
+            "path": "/_apidocs/libraries/dagster_azure"
+          },
+          {
+            "title": "Celery (dagster_celery)",
+            "path": "/_apidocs/libraries/dagster_celery"
+          },
+          {
+            "title": "Celery + Docker (dagster_celery_docker)",
+            "path": "/_apidocs/libraries/dagster_celery_docker"
+          },
+          {
+            "title": "Cron (dagster_cron)",
+            "path": "/_apidocs/libraries/dagster_cron"
+          },
+          {
+            "title": "Dask (dagster_dask)",
+            "path": "/_apidocs/libraries/dagster_dask"
+          },
+          {
+            "title": "Datadog (dagster_datadog)",
+            "path": "/_apidocs/libraries/dagster_datadog"
+          },
+          {
+            "title": "Databricks (dagster_databricks)",
+            "path": "/_apidocs/libraries/dagster_databricks"
+          },
+          {
+            "title": "dbt (dagster_dbt)",
+            "path": "/_apidocs/libraries/dagster_dbt"
+          },
+          {
+            "title": "GCP (dagster_gcp)",
+            "path": "/_apidocs/libraries/dagster_gcp"
+          },
+          {
+            "title": "Great Expectations (dagster_ge)",
+            "path": "/_apidocs/libraries/dagster_ge"
+          },
+          {
+            "title": "Github (dagster_github)",
+            "path": "/_apidocs/libraries/dagster_github"
+          },
+          {
+            "title": "Kubernetes (dagster_k8s)",
+            "path": "/_apidocs/libraries/dagster_k8s"
+          },
+          {
+            "title": "PagerDuty (dagster_pagerduty)",
+            "path": "/_apidocs/libraries/dagster_pagerduty"
+          },
+          {
+            "title": "Pandas (dagster_pandas)",
+            "path": "/_apidocs/libraries/dagster_pandas"
+          },
+          {
+            "title": "Papertrail (dagster_papertrail)",
+            "path": "/_apidocs/libraries/dagster_papertrail"
+          },
+          {
+            "title": "PostgreSQL (dagster_postgres)",
+            "path": "/_apidocs/libraries/dagster_postgres"
+          },
+          {
+            "title": "Prometheus (dagster_prometheus)",
+            "path": "/_apidocs/libraries/dagster_prometheus"
+          },
+          {
+            "title": "Pyspark (dagster_pyspark)",
+            "path": "/_apidocs/libraries/dagster_pyspark"
+          },
+          {
+            "title": "Shell (dagster_shell)",
+            "path": "/_apidocs/libraries/dagster_shell"
+          },
+          {
+            "title": "Slack (dagster_slack)",
+            "path": "/_apidocs/libraries/dagster_slack"
+          },
+          {
+            "title": "Snowflake (dagster_snowflake)",
+            "path": "/_apidocs/libraries/dagster_snowflake"
+          },
+          {
+            "title": "Spark (dagster_spark)",
+            "path": "/_apidocs/libraries/dagster_spark"
+          },
+          {
+            "title": "SSH / SFTP (dagster_ssh)",
+            "path": "/_apidocs/libraries/dagster_ssh"
+          },
+          {
+            "title": "Twilio (dagster_twilio)",
+            "path": "/_apidocs/libraries/dagster_twilio"
+          },
+          {
+            "title": "Lakehouse (experimental)",
+            "path": "/_apidocs/libraries/lakehouse"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Community",
+    "icon": "Users",
+    "path": "/community",
+    "children": [
+      {
+        "title": "Community",
+        "children": [
+          {
+            "title": "Code of Conduct",
+            "path": "/community/code-of-conduct"
+          },
+          {
+            "title": "Contributing",
+            "path": "/community/contributing"
+          },
+          {
+            "title": "Changing Public APIs",
+            "path": "/community/public-apis"
+          }
+        ]
+      }
+    ]
+  }
+]
